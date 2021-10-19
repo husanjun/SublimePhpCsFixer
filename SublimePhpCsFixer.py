@@ -12,7 +12,7 @@ def load_settings():
 
 
 def load_project_settings():
-    return sublime.active_window().active_view().settings().get('SublimePhpCsFixer')
+    return sublime.active_window().active_view().settings().get('SublimePhpCsFixer', {})
 
 
 def setting_enabled(name):
